@@ -39,7 +39,7 @@ var midPriceItems = items.filter( function (it){
   } else {
       return false;
   }
-})
+});
 console.log(midPriceItems)
 
 
@@ -55,7 +55,7 @@ var GBPitem = items.filter(function (it){
   } else {
       return false;
       }
-})
+});
 console.log(GBPitem)
 
 
@@ -73,13 +73,19 @@ var woodItems = items.filter(function (it){
   } else {
       return false;
       }
-})
+});
 console.log(woodItems)
 
 
 // Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
 // when items materials <= 8
 
+
+ var multiItems =items.filter(function(it) {
+  return it.materials <= 8;
+
+});
+console.log(multiItems)
 
 
 
@@ -95,5 +101,5 @@ var handMade = items.filter( function (it){
   } else {
       return false;
   }
-})
+});
 console.log(handMade)
