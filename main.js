@@ -21,19 +21,26 @@ console.log(sumaverage)
 //Show me how to get an array of items that cost between $14.00 and $18.00 USD
 // if item >14 but <18 print out console.log
 
-var plusItems = function isMoreThan(price) {
-  return element >= 14;
+// var plusItems = function isMoreThan(price) {
+//   return element >= 14;
+//
+// }
+//
+// var minusItems = function isLessThan(price) {
+//   return element <=18:
+//
+// }
+//
+// console.log(plusItems+minusItems)
 
-}
-
-var minusItems = function isLessThan(price) {
-  return element <=18:
-
-}
-
-console.log(plusItems+minusItems)
-
-
+var midPriceItems = items.filter( function (it){
+  if (14 <= it.price && 18 >= it.price && "USD" === it.currency_code) {
+    return true;
+  } else {
+      return false;
+  }
+})
+console.log(midPriceItems)
 
 
 
