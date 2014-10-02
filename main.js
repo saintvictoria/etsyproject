@@ -49,6 +49,15 @@ console.log(midPriceItems)
 // Show me how find the item with a "GBP" currency code and print its name and price. Please console.log the one you find.
 // if item = gbp then console.log &pound \u00A3
 
+var GBPitem = items.filter(function (it){
+  if ("GBP" === it.currency_code){
+    return true;
+  } else {
+      return false;
+      }
+})
+console.log(GBPitem)
+
 
 //var array = list items
 
@@ -58,13 +67,14 @@ console.log(midPriceItems)
 // when items materials = wood console.log
 
 //var materials = itemsMaterials
-items.filter(function (it){
+var woodItems = items.filter(function (it){
   if ("wood" === it.materials){
     return true;
   } else {
       return false;
       }
 })
+console.log(woodItems)
 
 
 // Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
@@ -79,10 +89,11 @@ items.filter(function (it){
 // var I_Did = document.getElementById.length
 //     console.log(I_Did)
 
-items.filter( function (it){
+var handMade = items.filter( function (it){
   if ('i_did' === it.who_made) {
     return true;
   } else {
       return false;
   }
 })
+console.log(handMade)
