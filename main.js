@@ -1,5 +1,12 @@
 // console.log(items)
  // console.log average price of items
+ //gets number of items
+// var numItems = items.length;
+//average price of items
+// var sum = allPrices/numItems;
+// var sumAverage sum (parseIntg)
+// console.log(sumaverage)
+
 var allPrices = [];
 
 var moving = items.forEach(function(it) {
@@ -12,37 +19,15 @@ var total = allPrices.reduce(function (bob, foo){
 
 var average = total/allPrices.length;
 
-console.log('the average price is '+ (average.toFixed(2)));
-
-
-
- //gets number of items
-
-// var numItems = items.length;
-
-//average price of items
-// var sum = allPrices/numItems;
-
-// var sumAverage sum (parseIntg)
-
-// console.log(sumaverage)
-
-
+console.log('the average price is '+ (average.toFixed(2)))
 
 
 //Show me how to get an array of items that cost between $14.00 and $18.00 USD
 // if item >14 but <18 print out console.log
-
 // var plusItems = function isMoreThan(price) {
-//   return element >= 14;
-//
-// }
-//
+//   return element >= 14;//
 // var minusItems = function isLessThan(price) {
 //   return element <=18:
-//
-// }
-//
 // console.log(plusItems+minusItems)
 
 var midPriceItems = items.filter( function (it){
@@ -53,9 +38,6 @@ var midPriceItems = items.filter( function (it){
   }
 });
 console.log(midPriceItems)
-
-
-
 
 
 // Show me how find the item with a "GBP" currency code and print its name and price. Please console.log the one you find.
@@ -72,12 +54,8 @@ console.log(GBPitem)
 
 
 //var array = list items
-
-
-
 // Show me how to find which items are made of wood. Please console.log the ones you find.
 // when items materials = wood console.log
-
 //var materials = itemsMaterials
 var woodItems = items.filter(function (it){
   if ("wood" === it.materials){
@@ -95,11 +73,8 @@ console.log(woodItems)
 
  var multiItems =items.filter(function(it) {
   return it.materials <= 8;
-
 });
 console.log(multiItems)
-
-
 
 
 // Show me how to calculate how many items were made by their sellers
