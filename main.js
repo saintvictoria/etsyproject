@@ -1,19 +1,31 @@
- console.log(items)
+// console.log(items)
  // console.log average price of items
-var allPrices = price.map[]
+var allPrices = [];
+
+var moving = items.forEach(function(it) {
+  allPrices.push(it.price);
+});
+
+var total = allPrices.reduce(function (bob, foo){
+  return bob+foo;
+});
+
+var average = total/allPrices.length;
+
+console.log('the average price is '+ (average.toFixed(2)));
 
 
 
  //gets number of items
 
-var numItems = items.length;
+// var numItems = items.length;
 
 //average price of items
-var sum = allPrices/numItems;
+// var sum = allPrices/numItems;
 
-var sumAverage sum (parseIntg)
+// var sumAverage sum (parseIntg)
 
-console.log(sumaverage)
+// console.log(sumaverage)
 
 
 
