@@ -7,15 +7,16 @@
 // var sumAverage sum (parseIntg)
 // console.log(sumaverage)
 
-var allPrices = [];
 
-items.forEach(function(it) {
-allPrices.push(it.price);
+var allPrices = items.map(function(it) {
+ return it.price;
 });
 
-var total = allPrices.reduce(function (bob, foo){
-  return bob+foo;
-});
+var total = allPrices.reduce (
+  function (previousValue, currentValue){
+  return previousValue + currentValue;
+}, /*initialValue*/ 0
+);
 
 var average = total/allPrices.length;
 
