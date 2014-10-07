@@ -9,8 +9,8 @@
 
 var allPrices = [];
 
-var moving = items.forEach(function(it) {
-  allPrices.push(it.price);
+items.forEach(function(it) {
+allPrices.push(it.price);
 });
 
 var total = allPrices.reduce(function (bob, foo){
